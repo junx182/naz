@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear Nhật Hạ</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <img class="image" src="./Assets/Photo/hiflower.jpg" draggable="false" />
+    <img class="imageStatic" src="./Assets//Photo/graduation.jpg" draggable="false" />
+    <img class="image" src="./Assets/Photo/graduation_photo.jpg" draggable="false" />
+    <img class="imageStatic" src="./Assets/Photo/me.jpg" draggable="false" />
+    <img class="imageStatic" src="./Assets/Photo/vydao.jpg" draggable="false" />
+    <img class="imageStatic" src="./Assets/Photo/vydao2.jpg" draggable="false" />
+    <iframe class="noHover" src="https://giphy.com/embed/OSOOHw7N9gb3R06OU7" width="480" height="480"
+      class="giphy-embed" allowFullScreen></iframe>
+    <img class="imageStatic" src="./Assets/Photo/and.jpg" draggable="false" />
+    <img class="image" src="./Assets/Photo/happybd.png" draggable="false" />
+    <img class="image" src="./Assets/Photo/luv.jpg" draggable="false" />
+  </div>
+  <audio id="player" src="./Assets/Music/hpbd.mp3" autoplay controls hidden></audio>
+  <script src="script.js">
+  </script>
+  <script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+      document.getElementById('player').play();
+      document.removeEventListener('click', musicPlay);
+    }
+  </script>
+</body>
+
+</html>
